@@ -51,7 +51,7 @@ var userChoice: Choices = Choices.ROCK
 while true {
 	print("Choose \"rock,\" \"paper,\" or \"scissors\" by typing it on your keyboard: ")
     input = readLine(strippingNewline: true)
-	if input! != nil && userChoice.inValues(value: input!.uppercased()) {
+	if input != nil && userChoice.inValues(value: input!.uppercased()) {
 		userChoice = Choices(rawValue: input!.uppercased())!
 		break
 	} else {
